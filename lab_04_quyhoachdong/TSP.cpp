@@ -42,7 +42,6 @@ int main() {
 
       // duyet qua cac thanh pho j de den i
       for(int j = 1; j <= n; j++){
-        if( i == j ) continue; // ko quay lai chinh thanh pho i
         if((s & ( 1 << (j-1))) == 0) continue; // neu thanh pho j chua tham thi bo qua
 
         int pre_s = s ^ (1 << (i-1)); // trang thai truoc do chua den i
